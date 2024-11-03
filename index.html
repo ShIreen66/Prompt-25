@@ -21,7 +21,7 @@
           <div class="input-field">
             <label for="password">Password</label>
             <input type="password" id="password" placeholder="Enter your password" required>
-            <span class="toggle-password" onclick="togglePasswordVisibility()">🙈</span>
+            <span class="toggle-password" onclick="togglePasswordVisibility()">👁️</span>
           </div>
 
           <button type="submit">Login</button>
@@ -29,7 +29,18 @@
       </div>
 
       <script>
-        
+        function togglePasswordVisibility() {
+          const passwordInput = document.getElementById("password");
+          const passwordIcon = document.querySelector(".toggle-password");
+        }
+
+        if (passwordInput.type === "password") {
+            passwordInput.type === "text";
+            passwordIcon.textcontent = "🙈";
+        } else {
+          passwordInput.type = password 
+          passwordIcon.textContent = "👁️";
+        }
       </script>
   </body>
   </html>
